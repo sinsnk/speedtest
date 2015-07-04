@@ -4,14 +4,13 @@ require 'date'
 class A1516soSpeedTest
   @@s = nil
   
-  # 任意のタイミングで時間計測を開始します.
+  # It will start the time measurement at any time..
   def self.start
     @@s = Time.now
   end
 
-  # startメソッドを呼んでから
-  # endメソッドを呼ぶことで、その差分を
-  # 取得することができます.
+  # after calling the start method, by calling the end method, 
+  # it is possible to measure the processing performed in the meantime.
   def self.end
     puts Time.now - @@s
   end
