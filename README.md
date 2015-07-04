@@ -1,15 +1,15 @@
-# GemMiniTest
+# Summary
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/gem_mini_test`. To experiment with that code, run `bin/console` for an interactive prompt.
+このgemでは時間計測をすることができます。  
+使い方はUsageを見て下さい
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'gem_mini_test'
+gem 'a1516so_speedtest'
 ```
 
 And then execute:
@@ -18,11 +18,20 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install gem_mini_test
+    $ gem install a1516so_speedtest
 
 ## Usage
 
-TODO: Write usage instructions here
+```.rb
+require 'a1516so_speedtest'
+# このメソッドで時間を計測開始となります
+A1516soSpeedTest.start
+
+〜〜〜処理
+
+# このメソッドでstartからの時間経過を出力します
+A1516soSpeedTest.end
+```
 
 ## Development
 
